@@ -1,0 +1,47 @@
+website : github.com
+
+=> create your account
+
+=> login
+
+=> create new repository / repo (new folder on github)
+
+=> give repo name
+
+=> access public   7405290964
+
+=> create new repo 
+
+2 ways to upload your folder/file
+=> drag and drop
+=> commit 
+
+using coding 
+=> git bash download on your system.
+=> website : https://git-scm.com/downloads
+=> use html editor : https://code.visualstudio.com/
+
+=> go to vs code terminal menu => new terminal
+=> select gitbash
+
+=> add your username :
+git config --global user.name "urvashi"
+
+=> add your email :
+git config --global user.email "urvashi.d.bhavsar@gmail.com"
+
+=> follow this steps (only 1 time process):
+(1) echo "# 13_jun_TTS_9.30_to_11" >> README.md
+(2) git init
+(3) git add README.md
+(4) git commit -m "first commit"
+(5) git branch -M main
+(6) git remote add origin 
+(7)https://github.com/urvashidbhavsar/13_jun_TTS_9.30_to_11.git
+(8) git push -u origin main
+
+=> repeat all time when you change
+(1) git add .
+(2) git commit -m "msg"
+(3) git push
+
