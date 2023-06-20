@@ -1,0 +1,12 @@
+save => ctrl + s 
+copy => ctrl + c 
+cut => ctrl + x 
+paste => ctrl + v 
+select all => ctrl + a 
+find => ctrl + f 
+comment => ctrl + / 
+undo => ctrl + z
+redu => ctrl + y
+
+page alter => alt + tab 
+show all page => window + tab 
