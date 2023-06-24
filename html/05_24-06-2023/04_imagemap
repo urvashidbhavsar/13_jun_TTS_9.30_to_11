@@ -1,0 +1,8 @@
+apply link on any shape of an image.
+
+(1) rect
+(2) circle 
+(3) polygon
+
+for imagemap we need points 
+which is taken from paint editor
