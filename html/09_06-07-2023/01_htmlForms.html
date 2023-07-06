@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <!-- to create a form used <form> tag 
+        action  => write to html page name which you forwarded
+            if we cant forward form page use #
+        method => there is 2 type of method 
+            get  = display page information in url 
+            post = wrap all information and send to the next page
+    -->
+    <form action="#" method="post" name="form1">
+        <label for="firstname">Name : </label>
+        <input type="text" name="fname" id="firstname" placeholder="Enter your name" required maxlength="10"
+            minlength="5">
+        <!-- readonly not used with required -->
+        <p></p>
+
+        <label for="">Birthdate</label>
+        <input type="date" name="" id=""> <!--updated-->
+        <p></p>
+
+        <label for="">Number : </label>
+        <input type="number" name="" id="">
+        <p></p>
+
+        <label for="">Color : </label>
+        <input type="color" name="" id=""> <!--updated-->
+        <p></p>
+
+        <label for="">Date Time :</label>
+        <input type="datetime-local" name="" id="">
+        <p></p>
+
+        <label for="">Time :</label>
+        <input type="time" name="" id="">
+        <p></p>
+
+        <label for="">Month :</label>
+        <input type="month" name="" id="">
+        <p></p>
+
+        <label for="">Week :</label>
+        <input type="week" name="" id="">
+        <p></p>
+
+        <label for="">Upload file </label>
+        <input type="file" name="" id="">
+        <p></p>
+
+        <label for="">Range :</label>
+        <input type="range" name="" id=""> <!--updated-->
+        <p></p>
+
+        <label for="">Email : </label>
+        <input type="email" name="" id=""> <!--updated-->
+        <p></p>
+
+        <label for="">Image : </label>
+        <input type="image" name="" id="" src="img2.jpg" height="30px" width="30px"> <!-- work like a button-->
+        <p></p>
+
+        <label for="">Password : </label>
+        <input type="password" name="" id="">
+        <p></p>
+
+        <button type="submit">Submit</button>
+        <button type="reset">Clear</button>
+        <button type="button">button</button>
+
+        <p></p>
+        <input type="submit" value="InpSubmit">
+        <input type="reset" value="InpReset">
+        <input type="button" value="Button">
+    </form>
+</body>
+
+</html>
