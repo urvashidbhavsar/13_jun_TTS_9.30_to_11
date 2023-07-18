@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        h1::after {
+            content: "\1F917";
+        }
+
+        h1::before {
+            content: "\1F917";
+        }
+
+        .mydiv {
+            height: auto;
+            width: 250px;
+            border: 2px solid black;
+            padding: 10px;
+        }
+
+        .mydiv::first-letter {
+            font-size: 30px;
+        }
+
+        .mydiv::first-line {
+            color: blue;
+        }
+
+        input::placeholder {
+            font-size: 12px;
+            color: red;
+        }
+
+        li::marker {
+            color: red;
+        }
+
+        .mydiv::selection {
+            background-color: black;
+            color: white;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- pseudo element used with :: -->
+    <h1>Hello world</h1>
+    <div class="mydiv">
+        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Deserunt laborum voluptatem saepe cum eaque
+        repellendus provident atque rem quas quidem aperiam accusantium expedita perferendis veniam, officiis corrupti
+        perspiciatis dolor nulla?
+    </div> <br>
+    <input type="text" name="" id="" placeholder="Enter Name">
+    <ul>
+        <li>List 1</li>
+        <li>List 2</li>
+    </ul>
+</body>
+
+</html>

@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .link1:link {
+            color: blue;
+        }
+
+        .link2:visited {
+            color: green;
+        }
+
+        .link3:active {
+            color: magenta;
+        }
+
+        .link4:hover {
+            color: chartreuse;
+        }
+
+        table {
+            height: 100px;
+            width: 100px;
+            /* border-collapse: separate; => default */
+            border-collapse: collapse;
+        }
+
+        tr:nth-child(1) {
+            background-color: aqua;
+        }
+
+        tr:nth-child(2) {
+            background-color: rgb(221, 133, 26);
+        }
+
+        a:nth-child(1) {
+            color: brown;
+        }
+
+        a:nth-child(3) {
+            color: darkcyan;
+        }
+
+        input:focus-visible {
+            /* border: 0; */
+            outline: none;
+        }
+    </style>
+</head>
+
+<body>
+    <a href="#" class="link1">Click Here</a>
+    <a href="#" class="link2">Click Here</a>
+    <a href="#" class="link3">Click Here</a>
+    <a href="#" class="link4">Click Here</a>
+
+    <table border="1">
+        <tr>
+            <td>1</td>
+            <td>1</td>
+            <td>1</td>
+        </tr>
+        <tr>
+            <td>1</td>
+            <td>1</td>
+            <td>1</td>
+        </tr>
+        <tr>
+            <td>1</td>
+            <td>1</td>
+            <td>1</td>
+        </tr>
+        <tr>
+            <td>1</td>
+            <td>1</td>
+            <td>1</td>
+        </tr>
+    </table>
+
+    <input type="text" placeholder="Enter value">
+</body>
+
+</html>
