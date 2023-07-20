@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .mydiv {
+            height: auto;
+            width: 300px;
+            background-color: chocolate;
+            padding: 30px;
+            border: 5px dashed blue;
+
+            /* default = cover content, border and padding */
+            /* background-clip: border-box;  */
+
+            /* cover only content  */
+            /* background-clip: content-box; */
+            
+            /* cover content and padding */
+            background-clip: padding-box;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="mydiv">
+        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Dignissimos fugit adipisci, doloribus ex provident hic
+        modi in assumenda fuga voluptatibus dolore veritatis rem, ab aut, eius tempora quasi nemo aliquid.
+    </div>
+</body>
+
+</html>
