@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hero Image Example</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        * {
+            margin: 0;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        img {
+            width: 100%;
+            height: 600px;
+            filter: brightness(50%);
+        }
+
+        .HeroImage {
+            position: relative;
+        }
+
+        .HeroImageText {
+            position: absolute;
+            top: 143px;
+            text-align: center;
+            width: 100%;
+        }
+
+        .title {
+            font-size: 60px;
+            text-transform: uppercase;
+            font-weight: 400;
+            color: white;
+            /* text-shadow: 0px 0px 5px black; */
+        }
+
+        .sm-text {
+            color: white;
+            /* text-shadow: 0px 0px 5px black; */
+            letter-spacing: 2px;
+            font-size: 17px;
+            padding-bottom: 30px;
+        }
+
+        .divide {
+            height: 3px;
+            width: 200px;
+            background-color: white;
+            margin: 40px auto;
+        }
+
+        button {
+            height: 40px;
+            width: 150px;
+            background: #ffffff21;
+            border: 2px solid white;
+            color: white;
+            font-size: 18px;
+            border-radius: 8px;
+        }
+
+        i {
+            font-size: 14px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="HeroImage">
+        <div class="image">
+            <img src="image/img1.jpg" alt="">
+        </div>
+        <div class="HeroImageText">
+            <h1 class="title">this shoudn't be so difficult</h1>
+            <div class="divide"></div>
+            <p class="sm-text">
+                Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+            </p>
+            <button>Click Here
+                <i class="fa-solid fa-caret-right fa-beat"></i>
+            </button>
+        </div>
+    </div>
+</body>
+
+</html>
