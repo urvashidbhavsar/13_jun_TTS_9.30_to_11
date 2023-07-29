@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .FlexEx {
+            border: 2px solid black;
+            display: flex;
+            /* flex-wrap: wrap-reverse;
+            flex-direction: row-reverse; */
+            flex-flow: row-reverse wrap-reverse;
+        }
+
+        .div1,
+        .div2,
+        .div3 {
+            height: 100px;
+            width: 50%;
+        }
+
+        .div1 {
+            background-color: rgb(51, 51, 209);
+        }
+
+        .div2 {
+            background-color: cadetblue;
+        }
+
+        .div3 {
+            background-color: chartreuse;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- flex-flow (flex-direction  and flex-wrap) -->
+    <div class="FlexEx">
+        <div class="div1">div 1</div>
+        <div class="div2">div 2</div>
+        <div class="div3">div 3</div>
+    </div>
+</body>
+
+</html>

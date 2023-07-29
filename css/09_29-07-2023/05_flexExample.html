@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+        }
+
+        .FlexEx {
+            background-color: transparent;
+        }
+
+        .FlexEx .flex-m {
+            margin: 0px 50px;
+        }
+
+        .FlexEx .flex-p {
+            padding: 50px 0px;
+        }
+
+        .FlexEx .flexBox {
+            display: flex;
+        }
+
+        .FlexEx .flexBox .left-side {
+            background-color: teal;
+            flex: 1;
+            display: flex;
+            align-items: center;
+            padding: 0px 30px;
+        }
+
+        .FlexEx .flexBox .left-side h1 {
+            font-size: 40px;
+            color: white;
+            padding-bottom: 30px;
+            text-transform: capitalize;
+        }
+
+        .FlexEx .flexBox .left-side p {
+            color: white;
+            letter-spacing: 1px;
+            line-height: 30px;
+        }
+
+        .FlexEx .flexBox .right-side {
+            flex: 1;
+        }
+
+        .FlexEx .flexBox .right-side img {
+            height: auto;
+            max-width: 100%;
+        }
+    </style>
+</head>
+
+<body>
+    <section class="FlexEx">
+        <!-- <div class="flex-m"> -->
+        <div class="flex-p">
+            <div class="flexBox">
+                <div class="left-side">
+                    <div>
+                        <h1>100% pure butter cookies</h1>
+                        <p>
+                            Lorem ipsum dolor sit amet,sed diam nonumy eirmod tempor invidunt ut labore et dolore
+                            magna aliquyam erat, At vero eos
+                            et accusam et justo duo dolores et ea rebum. Lorem ipsum dolor sit amet, no sea takimata
+                            sanctus est Lorem ipsum dolor
+                            sit amet. Stet clita kasd gubergren, no sea takimata sanctus est.
+                        </p>
+                    </div>
+                </div>
+                <div class="right-side">
+                    <img src="slide.jpg" alt="">
+                </div>
+            </div>
+            <!-- </div> -->
+        </div>
+    </section>
+</body>
+
+</html>
