@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            margin: 0;
+        }
+
+        .mydiv {
+            height: 300px;
+            width: 300px;
+            border: 2px solid black;
+            margin: 160px auto;
+            display: grid;
+            place-content: center;
+            overflow: hidden;
+        }
+
+        .lineMove {
+            height: 10px;
+            width: 150px;
+            background-color: red;
+            /* transform: translateX(-230px); */
+            animation: line-move 5s linear infinite;
+        }
+
+        @keyframes line-move {
+            0% {
+                transform: translateX(-230px);
+            }
+
+            100% {
+                transform: translateX(230px);
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="mydiv">
+        <h3>Loading....</h3>
+        <div class="lineMove"></div>
+    </div>
+</body>
+
+</html>
