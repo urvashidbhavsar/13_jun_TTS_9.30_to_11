@@ -1,0 +1,10 @@
+media query are used to make a responsive website.
+
+breakpoint : 
+
+mobile screen :             max width : 576px 
+max mobile screen :         min width : 576px
+tablet screen:              min width : 768px 
+mini leptop screen :        min width : 992px 
+large leptop screen :       min width : 1200px = 1140px
+extra large :               min width : 1400px

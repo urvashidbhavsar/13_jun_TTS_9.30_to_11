@@ -1,0 +1,76 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+a {
+    text-decoration: none;
+}
+
+ul {
+    list-style: none;
+}
+
+.list {
+    background-color: #6c043b;
+}
+
+.list .mainMenu {
+    display: flex;
+    gap: 20px;
+}
+
+.list .mainMenu li {
+    padding: 15px;
+}
+
+.list .mainMenu li a {
+    color: white;
+    font-size: 17px;
+}
+
+.list .fa-chevron-down {
+    font-size: 13px;
+    color: white;
+    transition: 0.5s ease all;
+}
+
+.list .showMenu {
+    position: relative;
+}
+
+.list .innerMenu {
+    display: none;
+    position: absolute;
+    top: 48px;
+    left: 7px;
+    background-color: brown;
+    width: 150px;
+}
+
+.list .showMenu:hover .innerMenu {
+    display: block;
+}
+
+.list .showMenu:hover .fa-chevron-down {
+    transform: rotate(-180deg);
+}
+
+.list .innerMenu li {
+    padding: 5px;
+}
+
+.list .icon {
+    position: relative;
+}
+
+.list .icon .cube {
+    position: absolute;
+    height: 15px;
+    width: 15px;
+    background-color: brown;
+    top: -8px;
+    left: 19px;
+    transform: rotate(45deg);
+}
