@@ -1,0 +1,98 @@
+/* ============ common css ============= */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+a {
+    text-decoration: none;
+}
+
+ul {
+    list-style: none;
+}
+
+/* margin */
+.container-large {
+    margin-left: 80px;
+    margin-right: 80px;
+}
+
+.container-sm {
+    margin-left: 30px;
+    margin-right: 30px;
+}
+
+.pad-10 {
+    padding: 10px 0px;
+}
+
+/* =============== homepage ============ */
+.mainSection .contactus {
+    background-color: bisque;
+}
+
+.mainSection .contactinfo {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.navbar {
+    background-color: #092121;
+}
+
+.navbar .navbar-nav {
+    display: flex;
+    align-items: center;
+}
+
+.navbar .navbar-nav .logo {
+    flex: 1;
+    color: white;
+}
+
+.navbar .navbar-nav .nav {
+    flex: 3;
+}
+
+.navbar .navbar-nav ul {
+    display: flex;
+    justify-content: end;
+    gap: 20px;
+    align-items: center;
+}
+
+.navbar .navbar-nav ul li {
+    padding: 5px;
+}
+
+.navbar .navbar-nav ul li a {
+    color: white;
+}
+
+.navbar .navbar-nav ul button {
+    height: 45px;
+    width: 140px;
+    font-size: 16px;
+    background-color: #e98c40;
+    color: white;
+    border-radius: 5px;
+    border: 2px solid transparent;
+}
+
+.navbar .navbar-nav .menubtn {
+    flex: 0.5;
+    display: none;
+    justify-content: end;
+}
+
+.navbar .navbar-nav .menubtn button {
+    border: none;
+    height: 45px;
+    color: white;
+    font-size: 17px;
+    background-color: transparent;
+}

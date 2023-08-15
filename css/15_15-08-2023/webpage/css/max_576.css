@@ -1,0 +1,23 @@
+@media (max-width:576px) {
+    .container-large {
+        margin-left: 20px;
+        margin-right: 20px;
+    }
+
+    .mainSection .contactus {
+        display: none;
+    }
+
+    /* ======== navbar===== */
+    .navbar {
+        background-color: black;
+    }
+
+    .navbar .navbar-nav .nav {
+        display: none;
+    }
+
+    .navbar .navbar-nav .menubtn {
+        display: flex;
+    }
+}

@@ -1,0 +1,23 @@
+@media (min-width:576px) {
+    .container-large {
+        margin-left: 35px;
+        margin-right: 35px;
+    }
+
+    .mainSection .contactus {
+        display: none;
+    }
+
+    /* ======== navbar===== */
+    .navbar {
+        background-color: black;
+    }
+
+    .navbar .navbar-nav .nav {
+        display: none;
+    }
+
+    .navbar .navbar-nav .menubtn {
+        display: flex;
+    }
+}

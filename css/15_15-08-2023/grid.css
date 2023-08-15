@@ -1,0 +1,81 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.gridExample {
+    background-color: bisque;
+}
+
+.gridExample .grid-m {
+    margin-left: 80px;
+    margin-right: 80px;
+}
+
+.gridExample .grid-p {
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+
+.gridExample .GridBox {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px;
+    justify-items: center;
+}
+
+.gridExample .GridBox img {
+    height: auto;
+    max-width: 100%;
+}
+
+@media (max-width:576px) {
+    .gridExample .grid-m {
+        margin-left: 20px;
+        margin-right: 20px;
+    }
+
+    .gridExample .GridBox {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (min-width:576px) {
+    .gridExample .grid-m {
+        margin-left: 35px;
+        margin-right: 35px;
+    }
+
+    .gridExample .GridBox {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (min-width:768px) {
+    .gridExample .grid-m {
+        margin-left: 50px;
+        margin-right: 50px;
+    }
+
+    .gridExample .GridBox {
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
+
+@media (min-width:992px) {
+    .gridExample .grid-m {
+        margin-left: 65px;
+        margin-right: 65px;
+    }
+
+    .gridExample .GridBox {
+        grid-template-columns: repeat(4, 1fr);
+    }
+}
+
+@media (min-width:1200px) {
+    .gridExample .grid-m {
+        margin-left: 80px;
+        margin-right: 80px;
+    }
+}

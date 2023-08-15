@@ -1,0 +1,6 @@
+@media (min-width:1200px) {
+    .container-large {
+        margin-left: 80px;
+        margin-right: 80px;
+    }
+}

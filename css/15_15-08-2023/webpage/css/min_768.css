@@ -1,0 +1,10 @@
+@media (min-width:768px) {
+    .container-large {
+        margin-left: 50px;
+        margin-right: 50px;
+    }
+
+    /* contact us inherit from min width 576px*/
+
+    /* navbar inherit from min width 576px */
+}
