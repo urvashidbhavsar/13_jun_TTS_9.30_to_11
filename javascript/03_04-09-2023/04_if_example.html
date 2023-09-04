@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <!-- program (static) 
+        display minimum number from given three numbers
+    -->
+    <script>
+        let num1 = 2;
+        let num2 = 4;
+        let num3 = 5;
+
+        document.write("1st number is : " + num1 + "<br>2nd number is : " + num2 + "<br>3rd number is : " + num3 + "<br>============== <br>")
+
+        if (num1 < num2 && num1 < num3) {
+            // console.log(123);
+            document.write(num1 + " is min")
+        } else if (num2 < num1 && num2 < num3) {
+            document.write(num2 + " is min")
+        } else if (num3 < num1 && num3 < num2) {
+            document.write(num3 + " is min")
+        } else if (num1 == num2 && num2 == num3 && num3 == num1) {
+            document.write(num1 + "," + num2 + " & " + num3 + " are same")
+        } else {
+            document.write("value not define")
+        }
+    </script>
+</body>
+
+</html>

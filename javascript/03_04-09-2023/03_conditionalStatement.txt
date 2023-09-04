@@ -1,0 +1,62 @@
+there is 2 type of conditional statement :
+(1) if statement 
+(2) switch statement 
+
+subtype of if statement : 
+(1) if statement 
+(2) if.. else statement 
+(3) if.. else if.. else statement 
+(4) nested if statement 
+
+syntax : (if statement)
+if(condition){
+    statements
+}
+
+syntax : (if.. else statement)
+if(condition){
+    statement
+}else{
+    statement
+}
+
+syntax : (if.. else if.. else statement )
+if(condition){
+    statement
+}else if(condition){
+    statement
+}
+....
+else{
+    condition
+}
+
+syntax : (nested if statement)
+if(condition){
+    if(condition){
+        statement
+    }else{
+        statement
+    }
+}else{
+    if(condition){
+        statement
+    }
+}
+
+syntax : (switch statement)
+switch(condition){
+    case 1 :
+        statement;
+        break;
+    case 2:
+        statement
+        break;
+    ......
+    case N :
+        statement
+        break;
+    default:
+        statement
+        break
+}
