@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+</head>
+
+<body>
+    <p id="p1"></p>
+    <p id="p2"></p>
+    <p id="p3"></p>
+    <p class="p4"></p>
+    <div></div>
+    <script>
+        document.getElementById("p1").innerText = "<i>Hello world</i>"
+        document.getElementById("p2").innerHTML = "<i>Hello world</i>"
+        // querySelector select id, class and element
+        document.querySelector("#p3").innerText = "Element by id"
+        document.querySelector(".p4").innerText = "Element by class"
+        document.querySelector("div").innerText = "Get Element"
+    </script>
+</body>
+
+</html>
