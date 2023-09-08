@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <!-- prompt take an input from user  -->
+    <button onclick="userinput()">Prompt</button>
+    <h3></h3>
+    <script>
+        function userinput() {
+            var x = prompt("Enter your name : ")
+            if (x == "") {
+                alert("Enter your name first")
+            } else {
+                document.querySelector("h3").innerHTML = x
+            }
+        }
+    </script>
+</body>
+
+</html>

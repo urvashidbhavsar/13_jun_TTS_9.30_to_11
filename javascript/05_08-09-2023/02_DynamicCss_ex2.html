@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /* create random class to add css using js */
+        .head {
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+            font-size: 50px;
+            color: darkred;
+            background-color: lightblue;
+            letter-spacing: 2px;
+        }
+    </style>
+</head>
+
+<body>
+    <button onclick="addCss()">Add Css</button>
+    <button onclick="removeCss()">Remove css</button>
+    <button onclick="toggleCss()">Toggle css</button>
+    <h1 class="h1">Hello World</h1>
+    <h1 class="head1">Hello User</h1>
+
+    <script>
+        function addCss() {
+            let heading = document.querySelector(".h1")
+            heading.classList.add("head")
+        }
+        function removeCss() {
+            let heading = document.querySelector(".h1")
+            heading.classList.remove("head")
+        }
+        function toggleCss() {
+            let headig = document.querySelector(".head1")
+            headig.classList.toggle("head")
+        }
+    </script>
+</body>
+
+</html>

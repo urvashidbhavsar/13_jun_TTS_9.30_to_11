@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <button onclick="changeCSS()">Click to change css</button>
+    <h1>Hello User</h1>
+
+    <script>
+        function changeCSS() {
+            let head = document.querySelector("h1")
+            head.style.color = "blue";
+            head.style.fontFamily = "verdana"
+            head.style.backgroundColor = "pink"
+            head.style.transitionDuration = "2s"
+            head.style.transitionProperty = "all"
+            head.style.transitionTimingFunction = "ease"
+        }
+    </script>
+</body>
+
+</html>
