@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <form action="">
+        <label for="">Enter Any Value : </label>
+        <input type="text" id="userinput" placeholder="Enter any value">
+
+        <br>
+        <button onclick="return UserInput()">Click Here</button>
+        <p>You entered : <span id="msg"></span></p>
+    </form>
+
+    <script>
+        function UserInput() {
+            let user = document.getElementById("userinput").value;
+            // let msg = document.getElementById("msg");
+            // msg.innerHTML = user;
+            document.getElementById("msg").innerHTML = user;
+            return false
+        }
+    </script>
+</body>
+
+</html>
