@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            margin: 0;
+        }
+
+        form {
+            padding: 10px;
+        }
+
+        .mydiv {
+            margin: 50px;
+            height: auto;
+            width: 300px;
+            border: 2px solid black;
+            padding: 10px;
+        }
+    </style>
+</head>
+
+<body>
+    <form action="#">
+        <label for="">Enter Table No : </label>
+        <input type="text" name="" id="num">
+
+        <button onclick="return displayTable()">Display</button>
+    </form>
+    <div id="tabledisp" class="mydiv"></div>
+
+    <script>
+        // isNaN() = not a number
+        function displayTable() {
+            let tableNo = document.getElementById("num").value;
+            let div = document.getElementById("tabledisp")
+            if (tableNo == "" || tableNo == null) {
+                alert("Enter Number")
+            } else if (isNaN(tableNo)) {
+                alert("Enter Only Number")
+            } else {
+                var i = 1, res = "";
+                for (i = 1; i <= 10; i++) {
+                    res = res + "<div class=' '>" + tableNo + "&Cross;" + i + "=" + tableNo * i + "</div>";
+                }
+                div.innerHTML = res;
+                return false
+            }
+        }
+    </script>
+</body>
+
+</html>

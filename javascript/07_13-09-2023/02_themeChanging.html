@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+    <style>
+        * {
+            margin: 0;
+        }
+
+        header {
+            background-color: teal;
+            position: fixed;
+            width: 100%;
+            top: 0;
+        }
+
+        .container {
+            margin: 0px 90px;
+        }
+
+        header .headerp {
+            padding: 15px 0px;
+        }
+
+        header .navbar {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        header .theme span {
+            font-size: 30px;
+        }
+
+        .content h1 {
+            margin: 100px 0px;
+        }
+
+        /* ========= create a random class to change theme ====*/
+        .dark-theme {
+            background-color: rgb(24, 24, 24);
+            color: white;
+        }
+
+        .dark-theme header {
+            background-color: #0080804f;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <div class="container headerp">
+            <div class="navbar">
+                <div class="logo">
+                    <h1><span class="fa-brands fa-google"></span>
+                        Logo</h1>
+                </div>
+                <div class="theme">
+                    <div>
+                        <span class="fa-regular fa-moon" id="icon"></span>
+                        <!-- <i class="bi bi-moon"></i> -->
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <section class="content">
+        <h1>Hello User, <a href="">Welcome</a></h1>
+    </section>
+
+    <script>
+        let change = document.getElementById("icon");
+        change.addEventListener("click", function () {
+            document.body.classList.toggle("dark-theme")
+
+            if (document.body.classList.contains("dark-theme") == true) {
+                change.classList.remove("fa-moon")
+                change.classList.add("fa-sun")
+            } else {
+                change.classList.remove("fa-sun")
+                change.classList.add("fa-moon")
+            }
+        })
+    </script>
+</body>
+
+</html>
