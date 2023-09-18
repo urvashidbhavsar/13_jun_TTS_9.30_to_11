@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <!-- object is a logical or physical items.
+        it follow oops concept.
+    -->
+    <p id="fullname"></p>
+    <p id="Birhdate"></p>
+    <script>
+        var person = {
+            firstname: "urvashi",
+            lastname: "Bhavsar",
+            mobileno: 9874563210,
+            birthdate: "30-12-1992"
+        }
+        document.getElementById("fullname").innerHTML = "full name is : " + person.firstname + " " + person.lastname
+        document.getElementById("Birhdate").innerHTML = person.birthdate;
+        console.log(person);
+
+        // to print an object use loop
+        for (const per in person) {
+            console.log(per + " => " + person[per]);
+        }
+    </script>
+</body>
+
+</html>
