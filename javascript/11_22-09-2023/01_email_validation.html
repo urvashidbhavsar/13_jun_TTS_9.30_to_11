@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        span {
+            color: red;
+        }
+    </style>
+</head>
+
+<body>
+    <form action="">
+        <table>
+            <tr>
+                <td>Enter Email : </td>
+                <td>
+                    <input type="text" name="email" id="mail" onblur="return emailValid()"
+                        onkeyup="return emailRegEx()">
+                </td>
+                <td>
+                    <span id="msg"></span>
+                </td>
+            </tr>
+            <tr>
+                <td colspan="3">
+                    <button onclick="return emailValid()" type="submit">Click Here</button>
+                </td>
+            </tr>
+        </table>
+    </form>
+
+    <script>
+        // click event & blur event
+        function emailValid() {
+            let email = document.getElementById("mail").value;
+            if (email == "" || email == null) {
+                document.getElementById("msg").innerHTML = "Enter Email"
+                return false;
+            }
+        }
+        // keyboard event
+        function emailRegEx() {
+            let email = document.getElementById("mail").value;
+            // copy expression from https://www.w3resource.com/
+            let emailEx = /^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{3})+$/
+            if (emailEx.test(email)) {
+                document.getElementById("msg").innerHTML = ""
+                return false;
+            } else {
+                document.getElementById("msg").innerHTML = "Enter Proper Email"
+                return false;
+            }
+        }
+    </script>
+</body>
+
+</html>

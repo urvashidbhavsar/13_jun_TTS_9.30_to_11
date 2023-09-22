@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        span {
+            color: red;
+        }
+    </style>
+</head>
+
+<body>
+    <form action="#">
+        <table>
+            <!-- radio button -->
+            <tr>
+                <td>Gender : </td>
+                <td>
+                    <input type="radio" name="gen" id="male">
+                    <label for="">Male</label>
+                    <input type="radio" name="gen" id="female">
+                    <label for="">Female</label>
+                </td>
+                <td>
+                    <span id="msg1"></span>
+                </td>
+            </tr>
+            <!-- checkbox -->
+            <tr>
+                <td>Subjects : </td>
+                <td>
+                    <input type="checkbox" name="chk1" id="c1">
+                    <label for="">HTML</label>
+                    <input type="checkbox" name="chk2" id="c2">
+                    <label for="">CSS</label>
+                    <input type="checkbox" name="chk3" id="c3">
+                    <label for="">Js</label>
+                </td>
+                <td>
+                    <span id="msg2"></span>
+                </td>
+            </tr>
+            <!-- dropdown -->
+            <tr>
+                <td>City</td>
+                <td>
+                    <select name="" id="citylist">
+                        <option value="-1">---select---</option>
+                        <option value="">Surat</option>
+                        <option value="">Vadodara</option>
+                    </select>
+                </td>
+                <td>
+                    <span id="msg3"></span>
+                </td>
+            </tr>
+            <!-- button -->
+            <tr>
+                <td colspan="3">
+                    <button type="submit" onclick="return checkvalidation()">Click Here</button>
+                </td>
+            </tr>
+        </table>
+    </form>
+
+    <script>
+        function checkvalidation() {
+            let m = document.getElementById("male").checked;
+            let f = document.getElementById("female").checked;
+            if (f == false && m == false) {
+                document.getElementById("msg1").innerText = "Select Gender"
+                return false
+            }
+            let c1 = document.getElementById("c1").checked;
+            let c2 = document.getElementById("c2").checked;
+            let c3 = document.getElementById("c3").checked;
+            if (c1 == false && c2 == false && c3 == false) {
+                document.getElementById("msg2").innerText = "Select Subjects"
+                return false
+            }
+            let ct = document.getElementById("citylist").value;
+            if (ct == "-1") {
+                document.getElementById("msg3").innerText = "select city"
+                return false
+            }
+        }
+    </script>
+</body>
+
+</html>
