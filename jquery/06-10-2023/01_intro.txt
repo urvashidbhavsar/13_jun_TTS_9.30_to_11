@@ -1,0 +1,15 @@
+jquery is a js library.
+
+website : https://jquery.com/
+
+version : 3.7.1
+
+
+Syntax : 
+$(document).ready(function(){
+    $("selector").event(function(){
+        $("selector").jquery_function();
+    })
+})
+
+selector : id, class, group, universal, element, attribute, decendent

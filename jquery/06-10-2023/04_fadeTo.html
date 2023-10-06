@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <!-- fade to set an opacity of an element -->
+    <img src="https://qph.cf2.quoracdn.net/main-qimg-26ca837ffe72773fed901847420dcd7f" alt="">
+
+    <!-- jquery cdn -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+
+    <script>
+        $(document).ready(function () {
+            $("img").fadeTo(0, 0.5)
+
+            $("img").mouseover(function () {
+                $("img").fadeTo(2000, 1)
+            })
+            $("img").mouseout(function () {
+                $("img").fadeTo(0, 0.5)
+            })
+
+        })
+    </script>
+</body>
+
+</html>

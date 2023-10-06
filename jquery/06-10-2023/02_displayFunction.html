@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <button id="btn1">Hide</button>
+    <button id="btn2">show</button>
+    <button id="btn3">toggle</button>
+
+    <h1>Hello User</h1>
+    <h2>Hello</h2>
+    <!-- link an jquery offline -->
+    <script src="jquery.js"></script>
+    <!-- display function effect on element height and width -->
+    <script>
+        $(document).ready(function () {
+            $("#btn1").click(function () {
+                $("h1").hide(5000);
+            })
+            $("#btn2").click(function () {
+                $("h1").show(5000);
+            })
+            $("#btn3").click(function () {
+                $("h2").toggle(5000);
+            })
+        })
+    </script>
+</body>
+
+</html>
