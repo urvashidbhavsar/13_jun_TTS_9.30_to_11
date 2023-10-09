@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .mydiv {
+            height: 150px;
+            width: 150px;
+            background-color: navy;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="mydiv"></div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script>
+        $(document).ready(function () {
+            $(".mydiv").slideUp().fadeIn().fadeOut().slideDown()
+        })
+    </script>
+</body>
+
+</html>

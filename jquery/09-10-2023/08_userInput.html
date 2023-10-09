@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <form action="#">
+        Enter Any value : <input type="text" name="" id="inputval">
+        <button id="btn1">click</button>
+    </form>
+    <p id="msg"></p>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script>
+        $(document).ready(function () {
+            $("#btn1").click(function () {
+                //create a variable
+                $un = $("#inputval").val();
+                if ($un == "" || $un == null) {
+                    alert("Enter value")
+                } else {
+                    $("#msg").html("<u>" + $un + "</u>")
+                }
+            })
+        })
+    </script>
+</body>
+
+</html>

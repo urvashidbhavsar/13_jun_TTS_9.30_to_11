@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .div1 {
+            height: 200px;
+            width: 140px;
+            background-color: teal;
+        }
+
+        .div2 {
+            height: 200px;
+            width: 140px;
+            background-color: tomato;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- these functions are only used for set effect on only element -->
+    <!-- slideUp, slideDown, slideToggle -->
+    <button id="btn1">Slideup</button>
+    <button id="btn2">Slidedown</button>
+    <button id="btn3">SlideToggle</button>
+    <hr>
+    <div class="div1"></div> <br>
+    <div class="div2"></div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script>
+        $(document).ready(function () {
+            $("#btn1").click(function () {
+                $(".div1").slideUp(2000)
+            })
+            $("#btn2").click(function () {
+                $(".div1").slideDown(2000)
+            })
+            $("#btn3").click(function () {
+                $(".div2").slideToggle(2000)
+            })
+        })
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .mydiv {
+            height: 100px;
+            width: 100px;
+            background-color: blueviolet;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="mydiv"></div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script>
+        // document.body.style.borderTopColor 
+        $(document).ready(function () {
+            $(".mydiv").animate({
+                height: "200px",
+                width: "200px",
+                borderRadius: "40px",
+                borderWidth: "2px",
+                // borderStyle: "solid",
+                // borderColor: "black",
+                marginLeft: "100px",
+                marginTop: "30px"
+            })
+        })
+    </script>
+</body>
+
+</html>
