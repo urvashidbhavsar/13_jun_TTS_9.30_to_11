@@ -1,0 +1,133 @@
+<! DOCTYPE html>
+    <html lang="en">
+
+    <head>
+        <meta charset="utf-8" />
+        <title> How to Create a TO-DO list using jQuery </title>
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js">
+        </script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js">
+        </script>
+        <script src="https://code.jquery.com/jquery-3.4.1.js"
+            integrity="sha256-WpOohJOqMqqyKL9FccASB9O0KwACQJpFTUBLTYOVvVU=" crossorigin="anonymous"> </script>
+    </head>
+    <style>
+        .container {
+            width: 80%;
+            height: auto;
+        }
+
+        .foot {
+            position: fixed;
+            left: 10%;
+            width: 80%;
+            text-align: center;
+        }
+
+        h3 {
+            text-align: center;
+            font-weight: normal;
+            color: red;
+            text-transform: uppercase;
+            font-size: 1.5em;
+            white-space: nowrap;
+            z-index: 1000;
+            font-family: 'Bangers', cursive;
+            @include skew(0, -6.7deg, false);
+            @include transition-property(font-size);
+            @include transition-duration(0.5s);
+        }
+
+        h2 {
+            text-align: center;
+            font-weight: bold;
+            color: red;
+            text-transform: uppercase;
+            font-size: 2.5em;
+            white-space: nowrap;
+            z-index: 1000;
+            font-family: 'Bangers', cursive;
+            @include skew(0, -6.7deg, false);
+            @include transition-property(font-size);
+            @include transition-duration(0.5s);
+        }
+
+        .text-success {
+            color: red;
+        }
+
+        body {
+            color: red;
+            font-family: 'Raleway';
+            font-size: 1.6rem;
+            font-weight: 700;
+            letter-spacing: 1px;
+            height: 100vh;
+            margin: 0;
+            text-transform: uppercase;
+        }
+
+        .alert-success {
+            color: red;
+            background-color: #dff0d8;
+            font-family: 'Bangers', cursive;
+            border-color: #d6e9c6;
+            font-weight: bold;
+        }
+    </style>
+    </head>
+
+    <body>
+        <h2> Example </h2>
+        <h3> How to Create a TO-DO list using jQuery </h3>
+        <br />
+        <br />
+        <center>
+            <div class="foot">
+                <div class="row">
+                    <div class="col-sm-1"> </div>
+                    <div class="col-sm-10">
+                        <div class="input-group">
+                            <input type="text" class="form-control" placeholder="Add Task" id="text">
+                            <div class="input-group-btn">
+                                <button class="btn btn-success">
+                                    <i class="glyphicon glyphicon-plus">
+                                    </i> </button>
+                            </div>
+                        </div>
+                        <br>
+                        <br>
+                    </div>
+                </div>
+            </div>
+            <br>
+            <h2 class="text text-success"> List of Tasks: </h2>
+            <br>
+            <div class="container">
+            </div>
+        </center>
+        <script>
+            $(document).ready(function () {
+                $('.btn-success').click(function () {
+                    if ($('#text').val().length != 0) {
+                        var x = $('.container').html();
+                        var y =
+                            `<div class = "alert alert-success alert-dismissible fade in">  
+<a href = "#" class = "close" data-dismiss = "alert" aria-label = "close"> ? </a>  
+                        ` + $('#text').val() + `</div>`;
+                        $('.container').html(y + x);
+                        $('#text').val("");
+                    } else alert("Enter some Text!");
+                });
+                $(document).on('click', '.alert', function () {
+                    if ($(this).css('text-decoration-line') == "none")
+                        $(this).css('text-decoration-line', 'line-through');
+                    else
+                        $(this).css('text-decoration-line', 'none');
+                });
+            });  
+        </script>
+    </body>
+
+    </html>

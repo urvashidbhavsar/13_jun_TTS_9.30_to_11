@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+</head>
+
+<body>
+    <header>
+        <div class="container headerp">
+            <div class="navbar">
+                <div class="logo">
+                    <h1><span class="fa-brands fa-github"></span>Logo</h1>
+                </div>
+                <div class="nav">
+                    <ul>
+                        <li><a href="">Home</a></li>
+                        <li><a href="">About</a></li>
+                        <li class="InnerMenu"><a href="#">Services</a>
+                            <span class="fa-solid fa-angle-down"></span>
+                            <ul class="dispmenu">
+                                <li><a href="">Service 1</a></li>
+                                <li><a href="">Service 2</a></li>
+                                <li><a href="">Service 3</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="">Contact</a></li>
+                        <li><a href="">Help</a></li>
+                        <li><a href="">Blog</a></li>
+                    </ul>
+                </div>
+                <div class="menubtn">
+                    <button class="togglebtn">
+                        <span class="fa-solid fa-bars-staggered" id="icon"></span>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <section class="homeimg">
+        <img src="https://cdn.pixabay.com/photo/2015/04/23/22/00/tree-736885_1280.jpg" alt="" width="100%">
+    </section>
+
+    <script src="https://code.jquery.com/jquery-3.7.1.js"></script>
+    <script src="1_toggle.js"></script>
+    <script src="2_changebg.js"></script>
+    <script src="3_dropdowmMenu.js"></script>
+</body>
+
+</html>
