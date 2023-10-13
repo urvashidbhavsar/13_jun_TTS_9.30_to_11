@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!-- bxslider css cdn -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bxslider/4.2.15/jquery.bxslider.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bxslider/4.2.15/jquery.bxslider.min.css">
+    <style>
+        * {
+            margin: 0;
+        }
+
+        img {
+            height: 600px;
+            width: 100%;
+        }
+
+        .bx-wrapper {
+            border: none !important;
+            box-shadow: none !important;
+        }
+
+        .bx-wrapper .bx-pager {
+            bottom: 29px;
+        }
+
+        .bx-wrapper .bx-pager.bx-default-pager a {
+            width: 30px;
+            height: 5px;
+        }
+
+        .bx-wrapper .bx-pager.bx-default-pager a.active {
+            background: red;
+        }
+
+        .bx-wrapper .bx-pager.bx-default-pager a:hover {
+            background: red;
+        }
+
+        .slider {
+            display: flex;
+        }
+
+        .image {
+            flex: 1;
+        }
+
+        .text {
+            flex: 1;
+            background-color: cornflowerblue;
+            color: white;
+            display: grid;
+            place-content: center;
+        }
+    </style>
+
+</head>
+
+<body>
+    <div class="bxslider">
+        <div class="slider">
+            <!-- <div> -->
+            <div class="image">
+                <img src="https://images.ctfassets.net/hrltx12pl8hq/28ECAQiPJZ78hxatLTa7Ts/2f695d869736ae3b0de3e56ceaca3958/free-nature-images.jpg?fit=fill&w=1200&h=630"
+                    alt="" title="image 1">
+            </div>
+            <div class="text">
+                <h1>Image 1</h1>
+            </div>
+            <!-- </div> -->
+        </div>
+        <div class="slider">
+            <div class="image">
+                <img src="https://images.unsplash.com/photo-1618588507085-c79565432917?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8YmVhdXRpZnVsJTIwbmF0dXJlfGVufDB8fDB8fHww&w=1000&q=80"
+                    alt="">
+            </div>
+            <div class="text">
+                <h1>Image 2</h1>
+            </div>
+        </div>
+        <div class="slider">
+            <div class="image">
+                <img src="https://cdn.pixabay.com/photo/2018/02/13/23/41/nature-3151869_1280.jpg" alt="">
+            </div>
+            <div class="text">
+                <h1>Image 3</h1>
+            </div>
+        </div>
+        <div class="slider">
+            <div class="image">
+                <img src="https://images.unsplash.com/photo-1441829160771-b3394437e69f?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1yZWxhdGVkfDE0fHx8ZW58MHx8fHx8&w=1000&q=80"
+                    alt="">
+            </div>
+            <div class="text">
+                <h1>Image 4</h1>
+            </div>
+        </div>
+    </div>
+
+    <!-- jquery cdn -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <!-- bxslider js cdn -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bxslider/4.2.15/jquery.bxslider.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bxslider/4.2.15/jquery.bxslider.js"></script>
+    <script>
+        $(document).ready(function () {
+            $(".bxslider").bxSlider({
+                speed: 1000,
+                controls: false,
+                auto: true,
+                autoHover: true,
+            })
+        })
+    </script>
+</body>
+
+</html>
