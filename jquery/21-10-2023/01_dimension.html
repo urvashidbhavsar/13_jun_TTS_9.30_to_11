@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        .div1 {
+            height: auto;
+            width: 300px;
+            border: 2px solid black;
+            padding: 10px;
+            margin: 10px;
+            cursor: grabbing;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="div1"></div>
+
+    <!-- jquery cdn -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script>
+        $(document).ready(function () {
+            $(".div1").mouseover(function () {
+                $txt = ""
+                $txt = "Height => " + $(".div1").height() +
+                    "<br>Width => " + $(".div1").width() +
+                    "<br>InnerHeight(with padding) => " + $(".div1").innerHeight() +
+                    "<br>InnerWidth(with padding) => " + $(".div1").innerWidth() +
+                    "<br>OuterHeight(with padding & border) => " + $(".div1").outerHeight() +
+                    "<br>OuterWidth(with padding & border) => " + $(".div1").outerWidth() +
+                    "<br>OuterHeight(with padding,margin & border) => " + $(".div1").outerHeight(true) +
+                    "<br>OuterWidth(with padding,margin & border) => " + $(".div1").outerWidth(true);
+                $(".div1").html($txt)
+            })
+        })
+    </script>
+</body>
+
+</html>

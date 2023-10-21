@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .main {
+            padding: 5px;
+            border: 1px solid black;
+            margin: 2px;
+            width: fit-content;
+        }
+
+        .box {
+            padding: 5px;
+            margin: 2px;
+            border: 1px solid red;
+            width: fit-content;
+            color: blue;
+        }
+
+        .mainDiv {
+            padding: 5px;
+            border: 1px solid black;
+            margin: 2px;
+            width: fit-content;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- wrap(), wrapAll(), wrapInner(), unwrap() -->
+    <button class="btn1">Wrap</button>
+    <div class="mydiv">Div 1</div>
+    <div class="mydiv">Div 2</div>
+    <hr>
+    <button class="btn2">WrapAll</button>
+    <div class="mydiv1">Div 1</div>
+    <div class="mydiv1">Div 2</div>
+    <hr>
+    <button class="btn3">wrapInner</button>
+    <p>this is my paragraph</p>
+    <hr>
+    <button class="btn4">Unwrap</button>
+    <div class="mainDiv">
+        <p>my para 1</p>
+        <p>my para 2</p>
+        <p>my para 3</p>
+    </div>
+
+    <!-- jquery cdn -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script>
+        $(document).ready(function () {
+            $(".btn1").click(function () {
+                $(".mydiv").wrap("<div class='main'></div>")
+            })
+            $(".btn2").click(function () {
+                $(".mydiv1").wrapAll("<div class='box'></div>")
+            })
+            $(".btn3").click(function () {
+                $("p").wrapInner("<em><u></u></em>")
+            })
+            $(".btn4").click(function () {
+                $("p").unwrap()
+            })
+        })
+    </script>
+</body>
+
+</html>
