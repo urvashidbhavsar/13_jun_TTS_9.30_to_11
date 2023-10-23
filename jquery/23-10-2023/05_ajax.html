@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="menubar/Menubar.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        #navigationbar {
+            display: none;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- Ajax = Asynchonized javascript and XML 
+        XML = extentible markup language
+
+        use to load another file without reloading whole page. for ex, document file, html file etc..
+
+        run always on live server
+    -->
+    <!-- <button>load file</button> -->
+    <section id="loader"></section>
+    <header id="navigationbar"></header>
+
+    <script src="https://code.jquery.com/jquery-3.7.1.js"></script>
+    <script>
+        $(document).ready(function () {
+            // $("button").click(function () {
+            $("#loader").load("menubar/animation.html", function () {
+                $("#loader").fadeOut(2000, function () {
+                    $("#navigationbar").slideDown(function () {
+                        $("#navigationbar").load("menubar/Menubar.html")
+                    })
+                })
+            })
+            // })
+        })
+    </script>
+</body>
+
+</html>

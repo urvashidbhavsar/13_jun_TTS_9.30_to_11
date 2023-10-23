@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        div,
+        ul,
+        li {
+            border: 1px solid gray;
+            margin: 5px;
+        }
+
+        .setcolor {
+            border: 1px solid red;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- decendent = 2 function = children(), find()-->
+    <button>click</button>
+    <hr>
+    <div class="main">main
+        <div class="sub">sub
+            <ul>
+                <li>list 1</li>
+                <li>list 2</li>
+            </ul>
+        </div>
+    </div>
+    <div class="main-1">main-1
+        <div class="sub-1">sub-1
+            <ul>
+                <li>list 1</li>
+                <li>list 2</li>
+            </ul>
+        </div>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.7.1.js"></script>
+    <script>
+        $(document).ready(function () {
+            $("button").click(function () {
+                // move only 1 step
+                // $(".main").children(".sub").addClass("setcolor");
+                // find child in parent class
+                $(".main").find("ul").addClass("setcolor");
+            })
+        })
+    </script>
+</body>
+
+</html>

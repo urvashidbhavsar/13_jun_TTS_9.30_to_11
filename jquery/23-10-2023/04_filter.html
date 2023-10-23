@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .changeval {
+            border: 1px solid black;
+            padding: 10px;
+            color: blue;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- filter = filter(), first(), last(), not(), eq(index number) -->
+    <button>click</button>
+    <hr>
+    <p class="mypara newpara1">my paragaph 1</p>
+    <p class="mypara newpara2">my paragaph 2</p>
+    <p class="mypara newpara3">my paragaph 3</p>
+    <p class="mypara newpara4">my paragaph 4</p>
+
+    <script src="https://code.jquery.com/jquery-3.7.1.js"></script>
+    <script>
+        $(document).ready(function () {
+            $("button").click(function () {
+                // $(".mypara").filter(".newpara3").addClass("changeval")
+                // $(".mypara").first().addClass("changeval")
+                // $(".mypara").last().addClass("changeval")
+                // $(".mypara").not(".newpara2").addClass("changeval")
+                $(".mypara").eq(1).addClass("changeval")
+            })
+        })
+    </script>
+</body>
+
+</html>

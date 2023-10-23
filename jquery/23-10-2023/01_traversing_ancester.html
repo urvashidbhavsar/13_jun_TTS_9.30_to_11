@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        div,
+        ul,
+        li {
+            border: 1px solid gray;
+            margin: 5px;
+        }
+
+        .setcolor {
+            border: 1px solid red;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- tranversing = means move through -->
+    <!-- ancestor(parent), decendent(child), siblings(similer), filter(searching) -->
+    <!-- ancestor =move up= 3 function = parent(), parents(), parentsUntil() -->
+    <button>click</button>
+    <hr>
+    <div class="main">main
+        <div class="sub">sub
+            <ul>
+                <li>list 1</li>
+                <li>list 2</li>
+            </ul>
+        </div>
+    </div>
+    <div class="main-1">main-1
+        <div class="sub-1">sub-1
+            <ul>
+                <li>list 1</li>
+                <li>list 2</li>
+            </ul>
+        </div>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.7.1.js"></script>
+    <script>
+        $(document).ready(function () {
+            $("button").click(function () {
+                // $("li").parent(".main ul").addClass("setcolor");
+                // $("li").parents(".main").addClass("setcolor");
+                $("ul").parentsUntil(".main").addClass("setcolor");
+            })
+        })
+    </script>
+</body>
+
+</html>
