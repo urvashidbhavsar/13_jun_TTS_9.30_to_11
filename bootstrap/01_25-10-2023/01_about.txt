@@ -1,0 +1,20 @@
+bootstrap is a css library. it also known as framework.
+
+bootstrap version : 5.3.2
+
+website : https://getbootstrap.com/
+
+bootstrap4 js = totally implemented with jquery.
+bootstrap5 js = dropped jquery code and replace with vanilla js.
+
+bootstrap4 js = responsive 5 tiers.
+bootstrap5 js = responsive 6 tiers.
+
+= you can use cdn or download offline package.
+
+bootstrap css changed less to Sass.
+
+totally classes are given. 
+
+
+
