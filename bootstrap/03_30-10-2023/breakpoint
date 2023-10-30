@@ -1,0 +1,17 @@
+css breakpoint                      bootstrap class 
+(1) max-width:576px                     - (xs)  = extra small 
+(2) min-width:576px                     sm = small 
+(3) min-width:768px                     md = medium screen 
+(4) min-width:992px                     lg = large screen 
+(5) min-width:1200px                    xl = extra large 
+(6) min-width:1400px                    xxl = extra extra large 
+
+grid system = 12 column system 
+
+.row =  flex 
+
+2 col = col-6 
+3 col = col-4 
+4 col = col-3 
+6 col = col-2 
+1 col = col-12 
