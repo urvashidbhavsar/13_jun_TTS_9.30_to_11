@@ -1,0 +1,23 @@
+element / class                             bootstrap class 
+===========================================================
+(1) label                                   form-label
+(2) input type = text, date, password,      form-control
+email, number, textarea, file etc 
+(3) input type = radio, checkbox 
+   = create a <div> in parent               form-check (vertically set)
+   = give class in input                    form-check-input 
+   = set a label name of input              form-check-label 
+   = if set buttons horizontally            form-check-inline
+(4) for dropdown list set in <select> tag   form-select 
+(5) id show multiple line from              multiple (set attribute)
+dropdown 
+    = if apply multiple size                size ="3" (set attribute)
+(6) input type = range                      form-range 
+(7) input type = color                      (1) form-control
+                                            (2) form-control-color 
+(8) to join label or button with            
+textbox 
+    = in parent <div> class                 input-group 
+    = in label or button                    input-group-text 
+
+(9) in floating-labels set placeholder attribute complusory if we removed it label not float it set as fixed label 
