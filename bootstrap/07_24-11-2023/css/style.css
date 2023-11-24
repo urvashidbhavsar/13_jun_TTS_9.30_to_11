@@ -1,0 +1,143 @@
+/* import other css file */
+@import url(mediaquery.css);
+
+/* common css */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+a{
+    text-decoration: none;
+}
+ul{list-style-type: none;}
+:root{
+    --color-pink :#ea3a60;
+}
+header .navbar-brand{
+    position: relative;
+    z-index: 1;
+}
+header .navbar h3{
+    color: var(--color-pink);
+    background-color: white;
+}
+header .navbar h3::after{
+    content: "";
+    height: 50px;
+    width: 50px;
+    border-width: 2px;
+    border-style: solid;
+    border-color: var(--color-pink);
+    display: block;
+    position: absolute;
+    top: -2px;
+    left: -8px;
+    border-radius: 10px;
+    z-index: -1;
+}
+header .search{
+    background-color: var(--color-pink);
+    height: 40px;
+    width: 40px;
+    border-radius: 50%;
+    display: grid;
+    place-content: center;
+    color: white;
+}
+header .navbar-collapse {
+    flex-grow: 0;
+    gap: 10px;
+}
+header .navbar-toggler {
+    border: none;
+    font-size: 25px;
+}
+header .navbar-toggler:focus {
+    box-shadow: none;
+}
+.homeslider .sliders{
+    padding: 120px 100px;
+    position: relative;
+    z-index: 1;
+}
+.homeslider .slider1{
+    background: url(../images/slide1.jpg) no-repeat center;
+    background-size: cover;
+}
+.homeslider .slider2{
+    background: url(../images/slide2.jpg) no-repeat center;
+    background-size: cover;
+}
+.homeslider .slider3{
+    background: url(../images/slide3.jpg) no-repeat center;
+    background-size: cover;
+}
+.homeslider .slider1::after, .slider2::after, .slider3::after{
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: black;
+    opacity: 0.5;
+    z-index: -1;
+}
+.homeslider .btn1{
+    background-color: #ea3a60;
+    color: white;
+}
+.homeslider .btn2{
+    background-color: rgba(255, 255, 255, 0.345);
+    color: white;
+}
+.homeslider .w-500{
+    width: 500px;
+}
+.expSec .btn3{
+    border: 1px solid #ea3a60;
+    color: #ea3a60;
+}
+.expSec .btn3:hover{
+    background-color: #ea3a60;
+    color: white;
+}
+.ServiceSec{
+    background-color:aliceblue;
+}
+.ServiceSec .icon span{
+    color: #ea3a60;
+    font-size: 35px;
+}
+.ServiceSec .num{
+    color: lavender;
+    font-size: 42px;
+    transition: 0.5s ease;
+}
+.ServiceSec .serviceBox{
+    box-shadow: 0px 0px 5px #80808045;
+}
+.ServiceSec .serviceBox:hover .num{
+    color: gray;
+}
+.ServiceSec .serlink{
+    color:#07072a;
+    transition: 0.5s ease;
+}
+.ServiceSec .serlink:hover{
+    color: #ea3a60;
+}
+.ServiceSec .readlink{
+    color: #07072a;
+}
+.ServiceSec .readlink::after{
+    content: "";
+    height: 2px;
+    width: 100%;
+    background-color: #ea3a60;
+    display: block;
+}
+.aboutSer .accordion {
+  --bs-accordion-border-radius:0 !important
+}
