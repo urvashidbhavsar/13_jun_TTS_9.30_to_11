@@ -1,0 +1,27 @@
+@media (max-width:576px) {
+    .homeslider .sliders{
+        padding: 60px 50px !important;
+    }      
+    .homeslider .w-500{
+        width: 100% !important;
+    }
+    .offcanvas .input-group{width: 100% !important}
+}
+@media (min-width:576px) {
+    .homeslider .w-500{
+        width: 100% !important;
+    }
+   .offcanvas .input-group{width: 100% !important}
+}
+@media (min-width:768px) {
+    
+}
+@media (min-width:992px) {
+    .homeslider .w-500{
+        width: 500px !important;
+    }
+    .offcanvas .input-group{width: 500px !important}
+}
+@media (min-width:1200px) {
+    
+}
